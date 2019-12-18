@@ -126,7 +126,7 @@ const sendGCM = (regIds, data, settings) => {
     restrictedPackageName: data.restrictedPackageName,
     dryRun: data.dryRun || false,
     data: opts.phonegap === true ? Object.assign(custom, notification) : custom, // See https://github.com/phonegap/phonegap-plugin-push/blob/master/docs/PAYLOAD.md#android-behaviour
-    notification: opts.phonegap === true ? undefined : notification,
+    //notification: opts.phonegap === true ? undefined : notification,
   });
   let chunk = 0;
 
